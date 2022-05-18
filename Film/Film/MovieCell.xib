@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MovieCell" customModule="Film" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="kOv-8T-R24">
+                        <rect key="frame" x="15" y="10" width="140" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="140" id="9dA-7d-hOv"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O5L-72-0Jt">
+                        <rect key="frame" x="170" y="49.5" width="190" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="O5L-72-0Jt" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="UFN-9x-rsa"/>
+                    <constraint firstAttribute="trailing" secondItem="O5L-72-0Jt" secondAttribute="trailing" constant="15" id="d8A-BA-wMQ"/>
+                    <constraint firstAttribute="bottom" secondItem="kOv-8T-R24" secondAttribute="bottom" constant="10" id="jNQ-68-zAl"/>
+                    <constraint firstItem="kOv-8T-R24" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="l3K-A3-XM0"/>
+                    <constraint firstItem="O5L-72-0Jt" firstAttribute="leading" secondItem="kOv-8T-R24" secondAttribute="trailing" constant="15" id="pLD-FV-LHT"/>
+                    <constraint firstItem="kOv-8T-R24" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="qbq-bs-Qkc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="movieImg" destination="kOv-8T-R24" id="wEL-vX-KZv"/>
+                <outlet property="movieNameLab" destination="O5L-72-0Jt" id="9PT-il-Le4"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="57.589285714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="1" width="1920" height="1077"/>
+    </resources>
+</document>
