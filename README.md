@@ -21,3 +21,6 @@ Jiawei Wu is responsible for the confirmation page. This page has the same infor
 Ruihui Lai 13662438 Ruihui.Lai-1@student.uts.edu.au
 
 Ruihui Lai is responsible for the history page. This page is used to display the list of order history and allows the user to make cancellation on the order.
+
+The github link:
+https://github.com/iosA3/Assignemnt3.git
